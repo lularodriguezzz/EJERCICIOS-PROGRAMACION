@@ -13,7 +13,7 @@ for (i=0; i < strlen (PALABRA); i++)
 
 {
       
-(PALABRA[i] + 3) = PALABRA[i];
+PALABRA[i] = (PALABRA[i] + 3);
       
 if ( 90 < PALABRA[i]+ 3)
 	{
@@ -24,3 +24,4 @@ PALABRA[i] = PALABRA[i] - 26;
 }
 printf ("\nLA PALABRA EN CODIGO CESAR ES:%s", PALABRA);
 }
+
