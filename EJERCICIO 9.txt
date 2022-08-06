@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+int main ()
+{
+int i =0;  
+char PALABRA[10];
+  
+printf ("INGRESE LA PALABRA MAYUSCULA DE 10 LETRAS MAX: ");
+  
+scanf ("%s", PALABRA);
+  
+for (i=0; i < strlen (PALABRA); i++)
+
+{
+      
+(PALABRA[i] + 3) = PALABRA[i];
+      
+if ( 90 < PALABRA[i]+ 3)
+	{
+	  
+PALABRA[i] = PALABRA[i] - 26;
+	
+}
+}
+printf ("\nLA PALABRA EN CODIGO CESAR ES:%s", PALABRA);
+}

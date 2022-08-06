@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+ char STRING1[20];
+ char STRING2[20];
+ int i=0;
+ int y=0;
+ int LETRAS1=0;
+  int LETRAS2=0;
+    printf ("INGRESAR STRING 1: ");
+    scanf("%s",STRING1);
+    printf ("INGRESAR STRING 2: ");
+    scanf("%s",STRING2);
+     while (  STRING1[i] !=  0)
+ {
+    LETRAS1++;
+    i++;
+ }
+ i=0;
+ while (  STRING2[i] !=  0)
+ {
+    LETRAS2++;
+    i++;
+ }
+ if (LETRAS1==LETRAS2)
+ { 
+     for (i=0;i<LETRAS1;i++)
+   {
+   if (STRING1[i]==STRING2[i])
+   {
+    y++;
+   }
+  
+   
+   }
+}
+if (y==LETRAS2)
+{
+    printf("LOS STRINGS SON IGUALES");
+}
+if (y!=LETRAS2)
+{
+    printf("LOS STRINGS NO SON IGUALES");
+}
+}

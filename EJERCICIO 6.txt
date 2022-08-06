@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main()
+{
+ char PALABRA[25];
+ int i=0;
+ int LETRAS=0;
+ int j=65;
+ int contador[25]={0};
+ int mayor=0;
+ int flag=0;
+    printf ("INGRESAR PALABRA EN MAYUSCULA: ");
+    scanf("%s",PALABRA);
+   
+while ( PALABRA[i] !=  0)
+ {
+    LETRAS++;
+    i++;
+ }
+ 
+ for (i=0;i<=LETRAS;i++)
+ {
+     for (j=65;j<=90;j++)
+     {
+         
+     if(PALABRA[i]==j)
+     {
+         contador[j-65]++;
+         
+     }
+     
+     }
+
+ }
+ for (i=0;i<25;i++)
+ {
+      if (contador[i]>flag)
+     {
+         flag=contador[i];
+         mayor=i+65;
+     }
+
+ }
+
+ printf ("LA LETRA %c ES LA QUE MAS VECES APARECE",mayor);
+ 
+}

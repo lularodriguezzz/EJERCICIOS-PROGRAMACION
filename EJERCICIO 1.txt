@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+ char PALABRA[20];
+int i =0;
+int LETRAS =0;
+    printf ("INGRESAR PALABRA: ");
+    scanf("%s", &PALABRA);
+
+ while ( PALABRA[i] !=  0)
+ {
+     LETRAS++;
+     i++;
+ }
+printf ("\nLA PALABRA TIENE %d LETRAS",LETRAS);
+}

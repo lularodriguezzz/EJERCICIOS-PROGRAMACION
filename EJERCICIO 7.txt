@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+ struct DATO
+  {
+      char NOMBRES[20];
+      int EDADES;
+  };
+  
+int main ()
+{
+ 
+  int i = 0;
+  int MENOR = 0;
+ struct DATO DATOS[6];
+
+  for (i = 1; i <= 5; i++)
+    {
+      printf ("INGRESAR NOMBRE DE LA %d PERSONA: ", i);
+      scanf ("%s", DATOS[i].NOMBRES);
+      printf ("INGRESAR EDAD DE LA %d PERSONA: ", i);
+      scanf ("%d", &DATOS[i].EDADES);
+    }
+    MENOR=DATOS[1].EDADES;
+    
+  for (i = 0; i < 5; i++)
+    {
+
+      if (DATOS[i].EDADES < MENOR) 
+	{
+	 DATOS[i].EDADES = MENOR; 
+	}
+	
+    }
+  for (i = 1; i<=5; i++)
+    {
+      if (DATOS[i].EDADES == MENOR)
+	{
+	  printf ("LA PERSONA MAS JOVEN ES %s",DATOS[i].NOMBRES);
+	}
+    }
+}

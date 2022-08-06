@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+ char PALABRA[20];
+ int i=0;
+ int LETRAS=0;
+ int MAYUSCULAS=0;
+ int MINUSCULAS=0;
+    printf ("INGRESAR PALABRA: ");
+    scanf("%s",PALABRA);
+while ( PALABRA[i] !=  0)
+ {
+    LETRAS++; 
+    i++;
+ }
+for (i=0;i<LETRAS;i++)
+{
+if (PALABRA[i] == 97 || PALABRA[i] == 101 || PALABRA[i] == 105 || PALABRA[i] == 111 || PALABRA[i] == 117 )
+{
+    MINUSCULAS++;
+}
+if (PALABRA[i] == 65|| PALABRA[i] == 69 || PALABRA[i] == 73|| PALABRA[i] == 79 || PALABRA[i] == 85)
+{
+   MAYUSCULAS++;
+}
+}
+printf("%s TIENE %d VOCALES MINUSCULAS Y %d VOCALES MAYUSCULAS",PALABRA,MINUSCULAS,MAYUSCULAS);
+}
